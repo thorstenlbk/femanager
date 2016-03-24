@@ -102,7 +102,7 @@ class TemplateUtility extends AbstractUtility
     public static function getTemplatePath($pathAndFilename, $part = 'template')
     {
         $matches = self::getTemplatePaths($pathAndFilename, $part);
-        return !empty($matches) ? end($matches) : '';
+        return !empty($matches) ? reset($matches) : '';
     }
 
     /**
